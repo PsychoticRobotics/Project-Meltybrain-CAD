@@ -1,0 +1,112 @@
+(footprint "ESC"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(property "Reference" "ESC"
+		(at 0 -0.5 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "52940666-bfe1-4864-bd4f-63280ba047af")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "ESC"
+		(at 0 1 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "9654394f-6cc3-4b6d-bb33-6180b20a5374")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "df3ffe9d-b038-4c53-8010-ab6cee3df617")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "b1237517-3dec-4d8e-8135-42ccf6c3c8c0")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_rect
+		(start -2 0.7)
+		(end 2 6.3)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "a5b0179d-d75f-4607-81c1-b5a7709d21dd")
+	)
+	(fp_text user "PWM"
+		(at 2.5 2.5 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "32b32617-d20c-49e8-96a7-6794cc2db569")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.0625)
+			)
+			(justify left bottom)
+		)
+	)
+	(fp_text user "GND"
+		(at 2.5 5.2 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "a3dd2907-40b6-421f-8eb2-6a19954e4438")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.0625)
+			)
+			(justify left bottom)
+		)
+	)
+	(pad "1" thru_hole circle
+		(at 0 2)
+		(size 1.6 1.6)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "e7aaf04c-a179-40f2-ab8b-00024b3d2216")
+	)
+	(pad "2" thru_hole circle
+		(at 0 4.5)
+		(size 1.6 1.6)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "c4af0831-8496-40d8-a11e-38e9cf244cbe")
+	)
+	(embedded_fonts no)
+)
