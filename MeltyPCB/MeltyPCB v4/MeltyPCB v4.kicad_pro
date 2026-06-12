@@ -753,7 +753,7 @@
         "uuid": "fdf2da9c-de8e-417a-8466-5de1a994f800"
       }
     ],
-    "used_designators": "",
+    "used_designators": "BUCK1,#PWR14,#PWR31-32",
     "variants": []
   },
   "sheets": [

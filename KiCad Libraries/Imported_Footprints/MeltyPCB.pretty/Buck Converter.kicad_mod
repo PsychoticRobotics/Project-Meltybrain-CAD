@@ -1,13 +1,13 @@
-(footprint "Vortex ESC"
+(footprint "Buck Converter"
 	(version 20260206)
 	(generator "pcbnew")
 	(generator_version "10.0")
 	(layer "F.Cu")
-	(property "Reference" "ESC"
+	(property "Reference" "BUCK"
 		(at 0 -0.5 0)
 		(unlocked yes)
 		(layer "F.SilkS")
-		(uuid "92c6afd1-84ba-438d-b9b4-9e3e8c60eead")
+		(uuid "379cb52c-e1e6-4d01-ba1e-734f49a0a17a")
 		(effects
 			(font
 				(size 1 1)
@@ -15,12 +15,12 @@
 			)
 		)
 	)
-	(property "Value" "Vortex ESC"
+	(property "Value" "Buck Converter"
 		(at 0 1 0)
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "bf54585a-47f2-4ceb-9da1-baf8841b6e45")
+		(uuid "00d0f870-c5ac-49d8-ac2c-5ba05b06ae5f")
 		(effects
 			(font
 				(size 1 1)
@@ -33,7 +33,7 @@
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "3ac07db9-3ba1-4cdd-ab81-424ee94b7179")
+		(uuid "a257f36f-c4e9-4aa1-b2df-4e87e29a586b")
 		(effects
 			(font
 				(size 1 1)
@@ -46,7 +46,7 @@
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "05bf3770-3213-4f04-922b-96a274fc47db")
+		(uuid "ff10565f-fa7b-4f17-bcc5-ab94d0015a8b")
 		(effects
 			(font
 				(size 1 1)
@@ -57,21 +57,21 @@
 	(attr smd)
 	(duplicate_pad_numbers_are_jumpers no)
 	(fp_rect
-		(start -2 0.7)
-		(end 2 6.3)
+		(start -2 0.5)
+		(end 2 8.5)
 		(stroke
 			(width 0.1)
 			(type solid)
 		)
 		(fill no)
 		(layer "F.SilkS")
-		(uuid "d6949c2e-04d9-48f5-82ba-d9538a8cd548")
+		(uuid "5f37a17d-967a-4230-9594-75bf76d4c201")
 	)
-	(fp_text user "RX"
-		(at 2.5 2.5 0)
+	(fp_text user "3.3V"
+		(at 2.5 2.3 0)
 		(unlocked yes)
 		(layer "F.SilkS")
-		(uuid "f42afc66-54c8-4b2e-807a-d9ae03c77614")
+		(uuid "27c0f04a-f531-42c5-bbcc-1f658b8e4f63")
 		(effects
 			(font
 				(size 0.5 0.5)
@@ -80,11 +80,24 @@
 			(justify left bottom)
 		)
 	)
-	(fp_text user "Dshot"
-		(at 2.5 5.2 0)
+	(fp_text user "5V"
+		(at 2.5 4.5 0)
 		(unlocked yes)
 		(layer "F.SilkS")
-		(uuid "a4d49f1a-479d-464c-bc78-c74cd4dcc797")
+		(uuid "0a7558cd-e97d-4640-b75c-d6929ba48e1a")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.0625)
+			)
+			(justify left bottom)
+		)
+	)
+	(fp_text user "GND"
+		(at 2.5 7 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "d47e99f4-ae9e-433c-ac12-a852bfa3906e")
 		(effects
 			(font
 				(size 0.5 0.5)
@@ -94,20 +107,28 @@
 		)
 	)
 	(pad "1" thru_hole circle
-		(at 0 2)
+		(at 0 1.8)
 		(size 1.6 1.6)
 		(drill 1)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
-		(uuid "c2a0a719-a01e-4c10-82d5-2739a29cedd3")
+		(uuid "d4d23491-086e-4bd9-bd85-bcb4c0e188f4")
 	)
 	(pad "2" thru_hole circle
-		(at 0 4.5)
+		(at 0 4.3)
 		(size 1.6 1.6)
 		(drill 1)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
-		(uuid "afc723a2-9afd-4c90-be0e-9d751e594deb")
+		(uuid "d8098501-de84-4d10-9b62-74d5e8a14c92")
+	)
+	(pad "3" thru_hole circle
+		(at 0 6.8)
+		(size 1.6 1.6)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "5662e0b4-f4e8-4470-a515-402497489b3d")
 	)
 	(embedded_fonts no)
 )
